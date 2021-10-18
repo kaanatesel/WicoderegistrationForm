@@ -1,0 +1,12 @@
+/home/atesel/Projects/registrationform-backend/src/main/java/com/registrationform/api/repository/RegFormRepository.java
+/home/atesel/Projects/registrationform-backend/src/main/java/com/registrationform/api/Application.java
+/home/atesel/Projects/registrationform-backend/src/main/java/com/registrationform/api/domain/RegForm.java
+/home/atesel/Projects/registrationform-backend/src/main/java/com/registrationform/api/configuration/LoggingConfig.java
+/home/atesel/Projects/registrationform-backend/src/main/java/com/registrationform/api/controller/RegFormController.java
+/home/atesel/Projects/registrationform-backend/src/main/java/com/registrationform/api/configuration/HikariConfiguration.java
+/home/atesel/Projects/registrationform-backend/src/main/java/com/registrationform/api/domain/CreateRegFromDto.java
+/home/atesel/Projects/registrationform-backend/src/main/java/com/registrationform/api/mapper/RegFormMapper.java
+/home/atesel/Projects/registrationform-backend/src/main/java/com/registrationform/api/configuration/JacksonConfiguration.java
+/home/atesel/Projects/registrationform-backend/src/main/java/com/registrationform/api/service/RegFormService.java
+/home/atesel/Projects/registrationform-backend/src/main/java/com/registrationform/api/configuration/SwaggerConfiguration.java
+/home/atesel/Projects/registrationform-backend/src/main/java/com/registrationform/api/domain/RegFormView.java

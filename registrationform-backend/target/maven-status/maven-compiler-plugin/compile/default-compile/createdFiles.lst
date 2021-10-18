@@ -1,0 +1,13 @@
+com/registrationform/api/service/RegFormService.class
+com/registrationform/api/repository/RegFormRepository.class
+com/registrationform/api/Application.class
+com/registrationform/api/mapper/RegFormMapper.class
+com/registrationform/api/domain/CreateRegFromDto.class
+com/registrationform/api/configuration/JacksonConfiguration.class
+com/registrationform/api/configuration/SwaggerConfiguration.class
+com/registrationform/api/controller/RegFormController.class
+com/registrationform/api/configuration/LoggingConfig.class
+com/registrationform/api/configuration/HikariConfiguration.class
+com/registrationform/api/domain/RegForm.class
+com/registrationform/api/mapper/RegFormMapperImpl.class
+com/registrationform/api/domain/RegFormView.class
