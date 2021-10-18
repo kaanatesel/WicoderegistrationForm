@@ -1,0 +1,68 @@
+<ion-content center text-center [fullscreen]="true">
+  <svg class="purple-thing-top" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#D0C1E8"
+      d="M24.2,-48.4C30.8,-38,35.3,-30.5,42,-22.9C48.6,-15.3,57.5,-7.6,63.7,3.6C69.9,14.8,73.4,29.6,68.7,40.5C63.9,51.5,50.9,58.5,38.1,63C25.2,67.4,12.6,69.3,-1.2,71.4C-15,73.5,-30.1,75.8,-42.7,71.2C-55.2,66.6,-65.3,55.1,-70.3,42C-75.4,29,-75.5,14.5,-70.8,2.7C-66.2,-9.1,-56.8,-18.3,-48.4,-25.6C-40.1,-32.9,-32.8,-38.5,-24.8,-48.1C-16.9,-57.7,-8.5,-71.4,0.2,-71.7C8.8,-71.9,17.5,-58.8,24.2,-48.4Z"
+      transform="translate(100 100)" />
+  </svg>
+
+  <svg class="purple-thing-bottom" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#A988DB"
+      d="M29.2,-48.4C40.3,-38.2,53.6,-34.4,63.2,-25.4C72.7,-16.3,78.6,-2.1,74.9,9.5C71.2,21.1,58.1,30,44.3,28.9C30.5,27.8,16.1,16.7,8.6,10.2C1.1,3.8,0.5,2,-4.9,5.6C-10.4,9.1,-20.6,17.9,-30.6,19.3C-40.5,20.7,-50.2,14.7,-56,5.2C-61.8,-4.3,-63.7,-17.1,-55.3,-21C-46.9,-24.8,-28.1,-19.6,-17.1,-29.9C-6.2,-40.1,-3.1,-65.9,3,-70.5C9,-75.1,18,-58.6,29.2,-48.4Z"
+      transform="translate(100 100)" />
+  </svg>
+
+  <ion-grid>
+    <ion-row class="ion-text-center">
+      <ion-col>
+        <img src="assets/mainicon.png" alt="">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-title style="text-align: center;">Sing Up</ion-title>
+        <form [formGroup]="regForm" (ngSubmit)="submit()">
+          <ion-list class="margin-top-40">
+            <ion-item>
+              <ion-label color="tertiary" position="floating">Name</ion-label>
+              <ion-input autocapitalize inputmode="text" formControlName="name"></ion-input>
+            </ion-item>
+            <div *ngFor="let error of errorMessages.name">
+              <ng-container *ngIf="name.hasError(error.type) && (name.dirty || name.touched)">
+                <small class="error-message">{{error.message}}</small>
+              </ng-container>
+            </div>
+            <ion-item>
+              <ion-label color="tertiary" position="floating">Surname</ion-label>
+              <ion-input autocapitalize inputmode="text" formControlName="surname"></ion-input>
+            </ion-item>
+            <div *ngFor="let error of errorMessages.name">
+              <ng-container *ngIf="surname.hasError(error.type) && (name.dirty || name.touched)">
+                <small class="error-message">{{error.message}}</small>
+              </ng-container>
+            </div>
+            <ion-item>
+              <ion-label color="tertiary" position="floating">Email</ion-label>
+              <ion-input inputmode="email" formControlName="email"></ion-input>
+            </ion-item>
+            <div *ngFor="let error of errorMessages.name">
+              <ng-container *ngIf="email.hasError(error.type) && (name.dirty || name.touched)">
+                <small class="error-message">{{error.message}}</small>
+              </ng-container>
+            </div>
+            <ion-item>
+              <ion-label color="tertiary" position="floating">Password</ion-label>
+              <ion-input formControlName="password" type="password"></ion-input>
+            </ion-item>
+            <ion-button [disabled]="!regForm.valid" type="submit" expand="block">Submit <ion-icon slot="end"
+                name="create">
+              </ion-icon>
+            </ion-button>
+          </ion-list>
+        </form>
+        <ion-title style="text-align: center;" class="margin-top-40">
+          Already have account?<ion-text color="primary"><a href="#">Sing in</a></ion-text>
+        </ion-title>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

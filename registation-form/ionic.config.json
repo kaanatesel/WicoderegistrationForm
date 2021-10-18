@@ -1,0 +1,7 @@
+{
+  "name": "registation-form",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

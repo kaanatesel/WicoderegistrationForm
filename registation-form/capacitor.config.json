@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "registation-form",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
